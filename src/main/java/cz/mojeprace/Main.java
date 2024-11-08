@@ -5,7 +5,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in, "UTF-8");
 
 
-    // Instance třídy EvidenceZamestnanych pro správu pojištěnců
+    // Instance třídy EvidenceZamestnanych pro správu zaměstnanců
     private static EvidenceZamestnancu evidenceZamestnancu = new EvidenceZamestnancu();
 
     public static void main(String[] args) {
@@ -35,8 +35,8 @@ public class Main {
     private static void zpracujVolbu(String volba) {
         switch (volba) {
             case "1":
-                // Přidání nového pojištěnce
-                pridejZamestnance(); // Přidání nového pojištěnce
+                // Přidání nového zaměstnance
+                pridejZamestnance(); // Přidání nového zaměstnance
                 break;
             case "2":
                 // Výpis všech zaměstnanců
@@ -80,7 +80,7 @@ public class Main {
     }
 
 
-    // Metoda pro přidání nového pojištěnce
+    // Metoda pro přidání nového zaměstnance
     private static void pridejZamestnance() {
         String jmeno = naformatujJmenoNeboPrijmeni(nactiNeplatnyVstup("Zadejte jméno zaměstnance:")); // Načtení jména
         String prijmeni = naformatujJmenoNeboPrijmeni(nactiNeplatnyVstup("Zadejte příjmení zaměstnance:")); // Načtení příjmení
